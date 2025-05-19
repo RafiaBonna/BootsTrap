@@ -1,0 +1,339 @@
+    .navbar-brand img {
+      height: 40px;
+    }
+    .nav-link {
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 10px;
+    }
+    .icon-btn {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      margin-left: 15px;
+    }
+    /* Navbar link hover effect */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Horizontal dropdown menu on hover */
+@media (min-width: 992px) {
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    max-width: 500rem;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 0;
+    margin-left: 3rem;
+    margin-inline-start: 0;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  
+  }
+
+  .navbar-nav .dropdown-menu .dropdown-item {
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+  }
+  .navbar-nav .nav-link {
+    color: #0E1D49; 
+  }
+  .custom-bg {
+  background-color: #F5F5F5;
+}
+
+}
+.text-navy {
+  color: #001f3f;
+}
+.nav-tabs {
+  border-bottom: 1px solid #e0e0e0; /* light gray line under tabs */
+  justify-content: center;
+}
+
+.nav-tabs .nav-link {
+  color: #999;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: navy;
+}
+
+.nav-tabs .nav-link.active {
+  color: navy;
+  border: none;
+  border-bottom: 3px solid navy; /* active tab underline */
+}
+
+.img-hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-border {
+  border: 1px solid #e0e0e0; /* হালকা ধূসর */
+}
+.see-more-btn {
+  background: linear-gradient(90deg, #fca174 0%, #ffb786 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+ 
+}
+
+.see-more-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+    body {
+      background-color: white;
+    }
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    td {
+      vertical-align: middle;
+      text-align: center;
+      padding: 0;
+    }
+    .latest-arrivals-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #031254;
+      text-align: center;
+    }
+    .btn-latest {
+      width: 200px;
+      border: 1px solid #031254;
+      border-radius: 0;
+      font-weight: 600;
+      color: #031254;
+      background-color: white;
+      transition: all 0.3s ease;
+      margin-bottom: 10px;
+    }
+    .btn-latest:hover {
+      background-color: #031254;
+      color: white;
+    }
+    .promo-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .image-cell img {
+      width: 100%;
+      height: auto;
+    }
+    .product-card {
+      border: 1px solid #e0e0e0;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-title {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 15px 0 10px;
+      color: #000;
+    }
+    .product-price {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #000;
+    }
+    .buy-now {
+      color: red;
+      font-weight: 600;
+      text-decoration: none;
+    }
+       .brand-logo {
+      max-height: 70px;
+      transition: transform 0.3s ease;
+    }
+    .brand-logo:hover {
+      transform: scale(1.1);
+    }
+    .brand-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0c1c48; /* dark navy */
+    }
+    .brand-description {
+      color: #1a1a1a;
+      font-size: 0.95rem;
+    }
+     .promo-img {
+      width: 100%;
+      height: auto;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+    }
+    .promo-img:hover {
+      transform: scale(1.02);
+    }
+    .promo-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-top: 15px;
+      color: #0c1c48;
+    }
+    .promo-subtitle {
+      font-size: 1rem;
+      color: #1a1a1a;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 20px;
+      text-align: center;
+      height: 100%;
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .product-image:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+    .product-title {
+      font-weight: 600;
+      font-size: 15px;
+      margin: 15px 0 10px;
+      color: #000;
+    }
+    .product-price {
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+    }
+    .buy-now {
+      font-weight: bold;
+      color: red;
+      font-size: 20px;
+      margin-top: 5px;
+      display: inline-block;
+    }
+      .price-card {
+      text-align: center;
+    }
+    .price-img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .price-img:hover {
+      transform: scale(1.05);
+    }
+    .price-title {
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 15px;
+      color: #0d1b39;
+    }
+    .price-subtitle {
+      font-size: 16px;
+      color: #0d1b39;
+    }
+      .voucher-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #0d1b39;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .voucher-card {
+      border: 1px solid #eee;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+      text-align: center;
+      padding: 15px;
+      height: 100%;
+    }
+
+    .voucher-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .voucher-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .voucher-price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .voucher-sub {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .buy-now {
+      color: red;
+      font-weight: 600;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .buy-now:hover {
+      text-decoration: underline;
+    }
+
